@@ -1,0 +1,30 @@
+body{
+    overflow: hidden;
+    min-height: 100vh;
+    cursor: crosshair;
+}
+
+.bulle{
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    filter: hue-rotate(0deg);
+    background-color: rgb(113, 207, 51);
+    animation: animer 8s;
+}
+
+@keyframes animer {
+    to{
+        opacity: 1;
+        top: -250px;
+        left: var(--left);
+        filter: hue-rotate(540deg);
+    }
+}
+
+h3{
+    text-align: center;
+    font-size: 100px;
+    margin-top: 12px;
+    color: grey;
+}
